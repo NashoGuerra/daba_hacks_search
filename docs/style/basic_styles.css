@@ -1,0 +1,58 @@
+/* CSS Document */
+html {
+	background-image: url("../image/background.jpg");
+	
+}
+body {
+	margin: 1rem;
+}
+h1 {
+	font-family: 'nespresso_lucasregular';
+    src: url('nespressolucas-regular-webfont.woff2') format('woff2'),
+         url('nespressolucas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-size: 2rem;
+	padding: 20px;
+	margin: 0;
+	text-shadow: -2px 2px 0px #fff;
+}
+h1:before{
+ 	content:url('../image/icono.png');
+	left: -10px;
+    position: relative;
+    top: 10px;
+}
+p {
+	font-family: 'nespresso_lucasregular';
+    src: url('nespressolucas-regular-webfont.woff2') format('woff2'),
+         url('nespressolucas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-size: 1rem;
+	padding: 20px;
+	margin: 0;
+}
+form{
+	font-family: 'nespresso_lucasregular';
+    src: url('nespressolucas-regular-webfont.woff2') format('woff2'),
+         url('nespressolucas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	margin: 20px;
+}
+input {
+	margin: 20px;
+}
+#submit_btn {
+	background: #000;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+	border: 0;
+}
+#submit_btn :hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+}

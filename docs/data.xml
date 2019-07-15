@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hacks>
+	<hack>
+		<name>Remove hidden H1 and H2</name>
+		<description>How to remove the hidden H1 and H2 provided by Nespresso, in order to substitute it with a html H1 or H2</description>
+		<code>var $h2 = $('h2').filter(function() {
+    return $(this).text() === "Pie de página";    
+});
+$h2.remove();
+document.getElementById("a11y-main-heading").remove();</code>
+	</hack>
+	<hack>
+		<name>Edit name products in home grid</name>
+		<description>How to edit the names in the Homesite Grid</description>
+		<code>var caps = document.getElementsByClassName("push-group-element__name");
+caps[0].innerHTML = "Nombre a mostrar del producto, permite html/css";
+caps[1].innerHTML = "Nombre a mostrar del producto, permite html/css";
+caps[2].innerHTML = "Nombre a mostrar del producto, permite html/css";
+caps[4].innerHTML = "Nombre a mostrar del producto, permite html/css";</code>
+	</hack>
+	<hack>
+		<name>Add link to image in Marketing and Recipe Pushes</name>
+		<description>Add url link to the images of </description>
+		<code>window.onload = function(){
+	var theURL = document.querySelectorAll('.focus-block-col'); 
+	var theIMG = document.querySelectorAll('.thumbs');
+	var theIMG2 = document.querySelectorAll('.recipes-table ul li div');
+	theIMG[0].style.position='relative';
+	theIMG[0].insertAdjacentHTML("afterbegin","&#60;a href=\"" + theURL[0].getElementsByTagName("a")[0].href + "\" style=\"position: absolute;width: 100%;height: 100%;\">&#60;/a&#62;");
+	theIMG[1].style.position='relative';
+	theIMG[1].insertAdjacentHTML("afterbegin","&#60;a href=\"" + theURL[0].getElementsByTagName("a")[0].href + "\" style=\"position: absolute;width: 100%;height: 100%;\">&#60;/a&#62;")
+	theIMG2[0].style.position='relative';
+	theIMG2[0].insertAdjacentHTML("afterbegin","&#60;a href=\"" + theURL[1].getElementsByTagName("a")[0].href + "\" style=\"position: absolute;width: 100%;height: 100%;\">&#60;/a&#62;");
+	theIMG2[1].style.position='relative';
+	theIMG2[1].insertAdjacentHTML("afterbegin","&#60;a href=\"" + theURL[1].getElementsByTagName("a")[0].href + "\" style=\"position: absolute;width: 100%;height: 100%;\">&#60;/a&#62;");
+}</code>
+	</hack>
+</hacks>
